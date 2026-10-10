@@ -6,8 +6,6 @@
 
 <br />
 
-<img src="./assets/social-signal.svg" width="100%" alt="Live public GitHub signal" />
-
 <div align="center">
 
 <a href="https://github.com/khov4nfs?tab=followers">
