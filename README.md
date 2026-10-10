@@ -18,6 +18,16 @@
 
 I’m **Minh**, a full-stack engineer interested in the complete delivery path — from a deliberate interface to backend boundaries, data, deployment, and runtime behavior.
 
+<div align="center">
+
+<img src="./assets/dev-coding.gif" width="520" alt="Custom animated developer workstation — coding, testing and shipping" />
+
+<sub>editor → tests → image → deploy → health</sub>
+
+</div>
+
+<br />
+
 <img src="./assets/terminal-live.svg" width="100%" alt="Animated development terminal, tests, containers and runtime logs" />
 
 I prefer software that is **typed, testable, observable, understandable, and actually shippable**. AI belongs in the workflow when it removes real friction, not when it adds another layer of noise.
