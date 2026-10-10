@@ -1,0 +1,49 @@
+<svg width="1200" height="430" viewBox="0 0 1200 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="430"><stop stop-color="#0D1117"/><stop offset="1" stop-color="#0B1220"/></linearGradient>
+  <linearGradient id="rail" x1="80" y1="0" x2="1120" y2="0"><stop stop-color="#22D3EE"/><stop offset="0.5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#34D399"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="1" y="1" width="1198" height="428" rx="24" fill="url(#bg)" stroke="#263241"/>
+<text x="54" y="54" fill="#E6EDF3" font-size="24" font-family="monospace" font-weight="700">FOCUS PILLARS</text>
+<text x="54" y="82" fill="#6E7F91" font-size="13" font-family="monospace">where product thinking, systems engineering and developer leverage meet</text>
+<circle cx="1093" cy="54" r="6" fill="#34D399" filter="url(#glow)"><animate attributeName="opacity" values=".35;1;.35" dur="1.7s" repeatCount="indefinite"/></circle>
+<text x="1110" y="59" fill="#8FA3B8" font-size="12" font-family="monospace">active focus</text>
+<rect x="54" y="105" width="1092" height="2" rx="1" fill="#1D2835"/>
+<rect x="54" y="105" width="350" height="2" rx="1" fill="#22D3EE"><animate attributeName="x" values="54;796;54" dur="7s" repeatCount="indefinite"/></rect>
+
+<!-- Product -->
+<rect x="54" y="136" width="340" height="236" rx="18" fill="#0F1722" stroke="#214557"/>
+<rect x="72" y="154" width="58" height="24" rx="12" fill="#102A35"/><text x="88" y="171" fill="#22D3EE" font-size="12" font-family="monospace">01</text>
+<text x="72" y="212" fill="#E6EDF3" font-size="21" font-family="monospace" font-weight="700">PRODUCT ENGINEERING</text>
+<text x="72" y="239" fill="#74879B" font-size="12" font-family="monospace">interface / feedback / clarity</text>
+<circle cx="80" cy="274" r="4" fill="#22D3EE"/><text x="96" y="279" fill="#C9D1D9" font-size="14" font-family="monospace">deliberate interfaces</text>
+<circle cx="80" cy="302" r="4" fill="#22D3EE" opacity=".8"/><text x="96" y="307" fill="#C9D1D9" font-size="14" font-family="monospace">useful product feedback</text>
+<circle cx="80" cy="330" r="4" fill="#22D3EE" opacity=".6"/><text x="96" y="335" fill="#C9D1D9" font-size="14" font-family="monospace">fewer accidental decisions</text>
+<text x="72" y="360" fill="#22D3EE" font-size="11" font-family="monospace">signal: useful / calm / intentional</text>
+
+<!-- System -->
+<rect x="430" y="136" width="340" height="236" rx="18" fill="#111522" stroke="#3F3D70"/>
+<rect x="448" y="154" width="58" height="24" rx="12" fill="#201A3B"/><text x="464" y="171" fill="#A78BFA" font-size="12" font-family="monospace">02</text>
+<text x="448" y="212" fill="#E6EDF3" font-size="21" font-family="monospace" font-weight="700">SYSTEM ENGINEERING</text>
+<text x="448" y="239" fill="#74879B" font-size="12" font-family="monospace">boundaries / reliability / scale</text>
+<circle cx="456" cy="274" r="4" fill="#A78BFA"/><text x="472" y="279" fill="#C9D1D9" font-size="14" font-family="monospace">APIs / auth / queues / data</text>
+<circle cx="456" cy="302" r="4" fill="#A78BFA" opacity=".8"/><text x="472" y="307" fill="#C9D1D9" font-size="14" font-family="monospace">visible failure modes</text>
+<circle cx="456" cy="330" r="4" fill="#A78BFA" opacity=".6"/><text x="472" y="335" fill="#C9D1D9" font-size="14" font-family="monospace">understandable as systems grow</text>
+<text x="448" y="360" fill="#A78BFA" font-size="11" font-family="monospace">signal: explicit / observable / durable</text>
+
+<!-- Dev tooling -->
+<rect x="806" y="136" width="340" height="236" rx="18" fill="#0F1919" stroke="#1D5B49"/>
+<rect x="824" y="154" width="58" height="24" rx="12" fill="#123329"/><text x="840" y="171" fill="#34D399" font-size="12" font-family="monospace">03</text>
+<text x="824" y="212" fill="#E6EDF3" font-size="21" font-family="monospace" font-weight="700">DEV TOOLING + AI</text>
+<text x="824" y="239" fill="#74879B" font-size="12" font-family="monospace">automation / context / acceleration</text>
+<circle cx="832" cy="274" r="4" fill="#34D399"/><text x="848" y="279" fill="#C9D1D9" font-size="14" font-family="monospace">agents and automation</text>
+<circle cx="832" cy="302" r="4" fill="#34D399" opacity=".8"/><text x="848" y="307" fill="#C9D1D9" font-size="14" font-family="monospace">context-rich workflows</text>
+<circle cx="832" cy="330" r="4" fill="#34D399" opacity=".6"/><text x="848" y="335" fill="#C9D1D9" font-size="14" font-family="monospace">shorter path to reliable result</text>
+<text x="824" y="360" fill="#34D399" font-size="11" font-family="monospace">signal: faster / sharper / lower friction</text>
+
+<path d="M394 254 H430" stroke="#334155" stroke-width="2" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.5s" repeatCount="indefinite"/></path>
+<path d="M770 254 H806" stroke="#334155" stroke-width="2" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.5s" repeatCount="indefinite"/></path>
+<circle cx="412" cy="254" r="5" fill="#22D3EE" filter="url(#glow)"><animate attributeName="cx" values="400;424;400" dur="2.4s" repeatCount="indefinite"/></circle>
+<circle cx="788" cy="254" r="5" fill="#A78BFA" filter="url(#glow)"><animate attributeName="cx" values="776;800;776" dur="2.4s" begin=".5s" repeatCount="indefinite"/></circle>
+</svg>
