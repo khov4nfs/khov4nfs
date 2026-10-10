@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="140" viewBox="0 0 1000 140">
+  <rect width="1000" height="140" rx="18" fill="#0d1117" stroke="#30363d"/>
+  <g transform="translate(500 70)">
+    <ellipse rx="430" ry="30" fill="none" stroke="#30363d"/>
+    <ellipse rx="325" ry="21" fill="none" stroke="#21262d"/>
+    <circle r="5" fill="#7dd3fc"><animateMotion dur="7s" repeatCount="indefinite" path="M-430 0 A430 30 0 1 0 430 0 A430 30 0 1 0 -430 0"/></circle>
+    <circle r="5" fill="#f0abfc"><animateMotion dur="5s" repeatCount="indefinite" path="M325 0 A325 21 0 1 1 -325 0 A325 21 0 1 1 325 0"/></circle>
+  </g>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8b949e">
+    <text x="45" y="31">FRONTEND</text><text x="446" y="31">PRODUCT</text><text x="843" y="31">BACKEND</text>
+    <text x="45" y="118">CRAFT</text><text x="470" y="118">SHIP</text><text x="870" y="118">SYSTEMS</text>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="54" viewBox="0 0 1000 54">
+  <defs><linearGradient id="g"><stop stop-color="#30363d"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#30363d"/></linearGradient></defs>
+  <path d="M26 27 H974" stroke="url(#g)" stroke-width="1"/>
+  <circle cy="27" r="4" fill="#7dd3fc">
+    <animate attributeName="cx" values="26;974;26" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cy="27" r="8" fill="none" stroke="#a78bfa" opacity=".45">
+    <animate attributeName="cx" values="974;26;974" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;9;4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

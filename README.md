@@ -1,111 +1,110 @@
 <div align="center">
 
-<h2 align="left">
- <abc>
-  Hi there! <img src="https://user-images.githubusercontent.com/42378118/110234147-e3259600-7f4e-11eb-95be-0c4047144dea.gif" width="30">
- </abc>
-</h2>
+<img src="./assets/hero.svg" width="100%" alt="kho.v4nfs — full-stack engineer" />
 
-<img
-  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2600&pause=900&color=FF6B6B&center=true&vCenter=true&width=520&lines=Minh+%7E+Khovan;Full-stack+Engineer;AI+%2B+Cloud+%2B+Product+Thinking"
-  alt="Typing animation"
-/>
+<br />
 
-<table>
-  <tr>
-    <td>
-      <img
-        src="https://gist.githubusercontent.com/Prince-Shivaram/3ace2c813ca49546f3f5f20cd03a2d3e/raw/hello.gif"
-        alt="Animated hello"
-        width="320"
-      />
-    </td>
-  </tr>
-</table>
+<a href="https://github.com/khov4nfs"><b>github</b></a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="mailto:minhpnq1807@gmail.com"><b>email</b></a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<code>kho.v4nfs</code>
 
-<h2 align="left">
- <abc>
-  Focus
- </abc>
-</h2>
+<br /><br />
 
-<table>
-  <tr>
-    <td width="45%" valign="middle" align="center">
-      <img
-        src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif"
-        alt="Animated header"
-        width="360"
-      />
-    </td>
-    <td width="55%" valign="top" align="left">
-      <p>I build product-minded systems that connect modern web experiences with reliable backend services, AI workflows, and practical infrastructure.</p>
-      <ul align="left">
-        <li>AI-powered learning, recommendations, RAG, and semantic search</li>
-        <li>Distributed platforms with TypeScript, NestJS, Next.js, Java, and Docker</li>
-        <li>Developer productivity tools that make context, search, and navigation faster</li>
-        <li>Backend services, APIs, microservices, and production-ready application architecture</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-**Full-stack engineer building AI-assisted platforms, distributed systems, and developer tools.**
-
-[![GitHub followers](https://img.shields.io/github/followers/khovan123?style=for-the-badge&logo=github&label=Follow)](https://github.com/khovan123)
-[![Profile views](https://komarev.com/ghpvc/?username=khovan123&style=for-the-badge&color=0e75b6)](https://github.com/khovan123)
+<img src="./assets/status.gif" width="310" alt="status: building useful things" />
 
 </div>
 
-## Tech Stack
+<img src="./assets/divider.svg" width="100%" alt="" />
 
-<p>
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111111">
-  <img alt="React" src="https://img.shields.io/badge/ReactJS-61DAFB?style=flat-square&logo=react&logoColor=111111">
-  <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
-  <img alt="NestJS" src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white">
-  <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white">
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
-  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
-  <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white">
-  <img alt="Prisma" src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white">
-  <img alt="Redis" src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white">
-  <img alt="RabbitMQ" src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white">
-  <img alt="Qdrant" src="https://img.shields.io/badge/Qdrant-DC244C?style=flat-square&logo=qdrant&logoColor=white">
-  <img alt="Azure" src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white">
-</p>
+### `01 / identity`
 
-## GitHub Snapshot
+<img src="./assets/terminal.svg" width="100%" alt="terminal introduction" />
+
+I’m **Minh**, a full-stack engineer who likes the whole path from interface → service → data → runtime.
+
+I care more about **useful software, good system boundaries, clear product thinking, and shipping** than collecting a wall of framework badges. AI is part of the toolbox when it removes friction — not when it adds noise.
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+### `02 / working set`
+
+<img src="./assets/stack.svg" width="100%" alt="current working stack" />
+
+<sub>
+My stack changes with the problem. The constants are typed interfaces, understandable APIs, pragmatic architecture, observable systems, and UI that feels intentional.
+</sub>
+
+<br /><br />
+
+<img src="./assets/pixel-signal.gif" width="100%" alt="animated full-stack signal" />
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+### `03 / what I gravitate toward`
 
 <table>
-  <tr>
-    <td width="33%" align="center">
-      <strong>Profile</strong><br>
-      <a href="https://github.com/khovan123">@khovan123</a>
-    </td>
-    <td width="33%" align="center">
-      <strong>Main languages</strong><br>
-      <p>
-  <img alt="TypeScript" src="https://img.shields.io/badge/-3178C6?style=flat-square&logo=typescript&logoColor=white">
-  <img alt="JavaScript" src="https://img.shields.io/badge/-F7DF1E?style=flat-square&logo=javascript&logoColor=111111">
-  <img alt="Java" src="https://img.shields.io/badge/-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
-  <img alt="Python" src="https://img.shields.io/badge/-3776AB?style=flat-square&logo=python&logoColor=white">
-</p>
-    </td>
-    <td width="33%" align="center">
-      <strong>Work focus</strong><br>
-      AI systems, cloud services, developer tools
-    </td>
-  </tr>
+<tr>
+<td width="33%" valign="top">
+
+**PRODUCT**
+
+Interfaces with a point of view.  
+Less chrome, clearer flows, fewer accidental decisions.
+
+</td>
+<td width="33%" valign="top">
+
+**SYSTEMS**
+
+Backends that stay understandable as they grow.  
+Boundaries, contracts, queues, data, failure modes.
+
+</td>
+<td width="33%" valign="top">
+
+**TOOLING**
+
+Automation and AI that shorten the distance between intent and result.  
+Context, agents, developer workflow.
+
+</td>
+</tr>
 </table>
 
-## Connect
+<br />
 
-<p>
-  <a href="https://github.com/khovan123"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-@khovan123-181717?style=for-the-badge&logo=github&logoColor=white"></a>
-  <a href="mailto:minhpnq1807@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-minhpnq1807%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-  <a href="https://gitlab.com/khovan123"><img alt="GitLab" src="https://img.shields.io/badge/GitLab-khovan123-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white"></a>
-</p>
+<img src="./assets/orbit.svg" width="100%" alt="animated engineering orbit" />
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+### `04 / build loop`
+
+<div align="center">
+<img src="./assets/build-loop.gif" width="84%" alt="build ship learn repeat" />
+</div>
+
+<br />
+
+```text
+idea → shape → build → break → understand → refine → ship
+```
+
+There are projects behind this profile, but this page is intentionally **not a project catalog**. Repositories are there when you want the details; this README is just the signal.
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+<div align="center">
+
+<sub>Phan Nguyen Quoc Minh · Full-stack Engineer · VN / UTC+7</sub>
+
+<br /><br />
+
+**`build things that feel simple on the surface.`**
+
+<br /><br />
+
+<a href="mailto:minhpnq1807@gmail.com">say hi →</a>
+
+</div>

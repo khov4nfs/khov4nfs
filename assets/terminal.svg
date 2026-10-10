@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250">
+  <defs>
+    <linearGradient id="bar" x1="0" x2="1">
+      <stop stop-color="#7dd3fc"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f0abfc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="250" rx="22" fill="#0d1117" stroke="#30363d"/>
+  <rect x="0" y="0" width="1000" height="40" rx="22" fill="#161b22"/>
+  <rect x="0" y="22" width="1000" height="18" fill="#161b22"/>
+  <circle cx="22" cy="20" r="5" fill="#ff7b72"/><circle cx="40" cy="20" r="5" fill="#d29922"/><circle cx="58" cy="20" r="5" fill="#3fb950"/>
+  <text x="80" y="25" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8b949e">khov4nfs@github: ~</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="16">
+    <text x="38" y="78" fill="#7dd3fc">➜</text><text x="65" y="78" fill="#8b949e">whoami</text>
+    <text x="65" y="108" fill="#f0f6fc">Minh — full-stack engineer</text>
+    <text x="38" y="145" fill="#7dd3fc">➜</text><text x="65" y="145" fill="#8b949e">cat mindset.txt</text>
+    <text x="65" y="175" fill="#c9d1d9">care about craft, clarity, useful software, and shipping.</text>
+    <text x="38" y="212" fill="#7dd3fc">➜</text><text x="65" y="212" fill="#8b949e">status</text>
+    <text x="136" y="212" fill="#a78bfa">building...</text>
+    <rect x="233" y="197" width="9" height="18" rx="2" fill="#f0abfc">
+      <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <rect x="38" y="232" width="0" height="2" fill="url(#bar)">
+    <animate attributeName="width" values="0;924;924;0" keyTimes="0;.55;.86;1" dur="5.8s" repeatCount="indefinite"/>
+  </rect>
+</svg>
