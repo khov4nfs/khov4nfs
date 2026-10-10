@@ -14,6 +14,25 @@
 
 <br />
 
+<img src="./assets/social-signal.svg" width="100%" alt="Live public GitHub signal" />
+
+<div align="center">
+
+<a href="https://github.com/khov4nfs?tab=followers">
+  <img src="https://img.shields.io/github/followers/khov4nfs?label=FOLLOWERS&style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0D1117&color=22D3EE" alt="GitHub followers" />
+</a>
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=khov4nfs&label=PROFILE%20VIEWS&color=8B5CF6&style=for-the-badge&abbreviated=true" alt="Profile views" />
+
+<br /><br />
+
+<img src="https://github-readme-stats.vercel.app/api?username=khov4nfs&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=percentile&bg_color=0D1117&title_color=22D3EE&text_color=C9D1D9&icon_color=A78BFA" width="49%" alt="GitHub stats and percentile" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khov4nfs&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9" width="41%" alt="Top GitHub languages" />
+
+</div>
+
+<br />
+
 <img src="./assets/section-01.svg" width="100%" alt="01 — Engineer at work" />
 
 I’m **Minh**, a full-stack engineer interested in the complete delivery path — from a deliberate interface to backend boundaries, data, deployment, and runtime behavior.
