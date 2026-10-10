@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" fill="none">
+<defs>
+  <linearGradient id="track" x1="94" y1="128" x2="1106" y2="128" gradientUnits="userSpaceOnUse"><stop stop-color="#22D3EE"/><stop offset=".52" stop-color="#818CF8"/><stop offset="1" stop-color="#A78BFA"/></linearGradient>
+  <filter id="g" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="1" y="1" width="1198" height="258" rx="22" fill="#0D1117" stroke="#1F2937"/>
+<text x="50" y="46" fill="#F8FAFC" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="700">DELIVERY PIPELINE</text>
+<text x="50" y="70" fill="#64748B" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">repeatable from local change to production signal</text>
+<line x1="94" y1="132" x2="1106" y2="132" stroke="#1E293B" stroke-width="6" stroke-linecap="round"/>
+<line x1="94" y1="132" x2="1106" y2="132" stroke="url(#track)" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle">
+  <g><circle cx="94" cy="132" r="17" fill="#0B1220" stroke="#22D3EE"/><text x="94" y="137" fill="#22D3EE" font-size="12">01</text><text x="94" y="177" fill="#E2E8F0" font-size="13">CODE</text><text x="94" y="197" fill="#64748B" font-size="10">editor</text></g>
+  <g><circle cx="263" cy="132" r="17" fill="#0B1220" stroke="#22D3EE"/><text x="263" y="137" fill="#22D3EE" font-size="12">02</text><text x="263" y="177" fill="#E2E8F0" font-size="13">COMMIT</text><text x="263" y="197" fill="#64748B" font-size="10">git</text></g>
+  <g><circle cx="432" cy="132" r="17" fill="#0B1220" stroke="#818CF8"/><text x="432" y="137" fill="#A5B4FC" font-size="12">03</text><text x="432" y="177" fill="#E2E8F0" font-size="13">BUILD</text><text x="432" y="197" fill="#64748B" font-size="10">ci</text></g>
+  <g><circle cx="600" cy="132" r="17" fill="#0B1220" stroke="#818CF8"/><text x="600" y="137" fill="#A5B4FC" font-size="12">04</text><text x="600" y="177" fill="#E2E8F0" font-size="13">TEST</text><text x="600" y="197" fill="#64748B" font-size="10">checks</text></g>
+  <g><circle cx="768" cy="132" r="17" fill="#0B1220" stroke="#A78BFA"/><text x="768" y="137" fill="#C4B5FD" font-size="12">05</text><text x="768" y="177" fill="#E2E8F0" font-size="13">CONTAINER</text><text x="768" y="197" fill="#64748B" font-size="10">docker</text></g>
+  <g><circle cx="937" cy="132" r="17" fill="#0B1220" stroke="#A78BFA"/><text x="937" y="137" fill="#C4B5FD" font-size="12">06</text><text x="937" y="177" fill="#E2E8F0" font-size="13">DEPLOY</text><text x="937" y="197" fill="#64748B" font-size="10">server</text></g>
+  <g><circle cx="1106" cy="132" r="17" fill="#07130F" stroke="#34D399"/><text x="1106" y="137" fill="#86EFAC" font-size="12">07</text><text x="1106" y="177" fill="#E2E8F0" font-size="13">OBSERVE</text><text x="1106" y="197" fill="#64748B" font-size="10">runtime</text></g>
+</g>
+<circle cy="132" r="8" fill="#F8FAFC" filter="url(#g)"><animate attributeName="cx" values="94;263;432;600;768;937;1106" keyTimes="0;.16;.32;.49;.66;.83;1" dur="6.2s" repeatCount="indefinite"/></circle>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">
+  <rect x="866" y="27" width="264" height="40" rx="10" fill="#091511" stroke="#1D6B58"/>
+  <circle cx="887" cy="47" r="5" fill="#34D399"><animate attributeName="opacity" values=".25;1;.25" dur="1.3s" repeatCount="indefinite"/></circle>
+  <text x="902" y="51" fill="#86EFAC">production / healthy / 3 replicas</text>
+</g>
+<g transform="translate(52 222)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">
+  <text fill="#64748B">CI STATUS</text><rect x="72" y="-11" width="188" height="14" rx="7" fill="#111827"/><rect x="72" y="-11" height="14" rx="7" fill="#34D399"><animate attributeName="width" values="18;58;110;154;188" dur="4.5s" repeatCount="indefinite"/></rect><text x="275" y="0" fill="#86EFAC">PASS</text>
+</g>
+</svg>
