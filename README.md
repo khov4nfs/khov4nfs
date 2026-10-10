@@ -41,8 +41,6 @@ I’m **Minh**, a full-stack engineer interested in the complete delivery path �
 
 <img src="./assets/dev-coding.gif" width="660" alt="Custom animated developer workstation — coding, testing and shipping" />
 
-<sub>editor → tests → image → deploy → health</sub>
-
 </div>
 
 <br />
@@ -56,10 +54,6 @@ I prefer software that is **typed, testable, observable, understandable, and act
 <img src="./assets/section-02.svg" width="100%" alt="02 — Delivery pipeline" />
 
 <img src="./assets/deploy-flow.svg" width="100%" alt="Animated CI/CD deployment pipeline" />
-
-```text
-code → commit → build → test → container → deploy → observe
-```
 
 A feature is not finished at `works on my machine`. I care about repeatable builds, bounded failures, deployment feedback, and knowing what the system is doing after release.
 
