@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" fill="none">
+<defs><linearGradient id="scan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22D3EE" stop-opacity="0"/><stop offset=".5" stop-color="#22D3EE" stop-opacity=".55"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></linearGradient></defs>
+<rect x="1" y="1" width="1198" height="298" rx="22" fill="#0D1117" stroke="#1F2937"/>
+<rect x="40" y="34" width="1120" height="232" rx="16" fill="#090E17" stroke="#263244"/>
+<circle cx="64" cy="58" r="5" fill="#F87171"/><circle cx="81" cy="58" r="5" fill="#FBBF24"/><circle cx="98" cy="58" r="5" fill="#34D399"/>
+<text x="122" y="62" fill="#64748B" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">kho.v4nfs@devbox: ~/workspace</text>
+<line x1="40" y1="78" x2="1160" y2="78" stroke="#1F2937"/>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">
+  <text x="64" y="108" fill="#22D3EE">$ pnpm test --runInBand</text>
+  <text x="64" y="136" fill="#34D399">✓ api contracts</text><text x="250" y="136" fill="#64748B">42 passed</text>
+  <text x="64" y="160" fill="#34D399">✓ integration</text><text x="250" y="160" fill="#64748B">18 passed</text>
+  <text x="64" y="184" fill="#34D399">✓ ui flows</text><text x="250" y="184" fill="#64748B">12 passed</text>
+  <text x="64" y="214" fill="#A78BFA">$ docker compose up -d</text>
+  <text x="64" y="240" fill="#CBD5E1">services:</text><text x="143" y="240" fill="#86EFAC">web ✓</text><text x="205" y="240" fill="#86EFAC">api ✓</text><text x="267" y="240" fill="#86EFAC">db ✓</text><text x="321" y="240" fill="#86EFAC">worker ✓</text>
+</g>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">
+  <rect x="696" y="105" width="420" height="126" rx="12" fill="#0B1220" stroke="#1E293B"/>
+  <text x="718" y="132" fill="#64748B">runtime.log</text>
+  <text x="718" y="157" fill="#22D3EE">15:24:11</text><text x="789" y="157" fill="#CBD5E1">request completed</text><text x="1000" y="157" fill="#86EFAC">200 84ms</text>
+  <text x="718" y="181" fill="#22D3EE">15:24:12</text><text x="789" y="181" fill="#CBD5E1">queue drained</text><text x="1000" y="181" fill="#86EFAC">0 pending</text>
+  <text x="718" y="205" fill="#22D3EE">15:24:13</text><text x="789" y="205" fill="#CBD5E1">health probe</text><text x="1000" y="205" fill="#86EFAC">healthy</text>
+</g>
+<rect x="694" y="94" width="86" height="2" fill="#22D3EE"><animate attributeName="x" values="694;1030;694" dur="4s" repeatCount="indefinite"/></rect>
+<rect x="42" y="82" width="1116" height="2" fill="url(#scan)" opacity=".35"><animate attributeName="y" values="82;258;82" dur="7s" repeatCount="indefinite"/></rect>
+<rect x="379" y="225" width="9" height="17" rx="1" fill="#22D3EE"><animate attributeName="opacity" values="1;1;0;0;1" dur="1s" repeatCount="indefinite"/></rect>
+</svg>
