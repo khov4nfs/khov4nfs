@@ -1,0 +1,172 @@
+name: Render animated profile hero
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/render-animated-profile-hero.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet pillow
+      - name: Render animated developer workspace hero
+        shell: bash
+        run: |
+          python - <<'PY'
+          from PIL import Image, ImageDraw, ImageFont, ImageFilter
+          import math, os
+
+          W,H=1200,470
+          OUT='assets/hero-dev.gif'
+          BG=(8,13,22); PANEL=(11,18,30); LINE=(38,50,68); MUTED=(100,116,139); TEXT=(232,238,245)
+          CYAN=(34,211,238); VIO=(139,92,246); GREEN=(52,211,153); BLUE=(59,130,246); PINK=(236,72,153); WARM=(251,191,36)
+
+          def font(size,bold=False):
+              names=['/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf' if bold else '/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf',
+                     '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf' if bold else '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf']
+              for p in names:
+                  if os.path.exists(p): return ImageFont.truetype(p,size)
+              return ImageFont.load_default()
+
+          F12=font(12); F14=font(14); F16=font(16); F20=font(20); F24=font(24,True); F42=font(42,True)
+
+          def rr(d,xy,r,fill,outline=None,w=1): d.rounded_rectangle(xy,radius=r,fill=fill,outline=outline,width=w)
+
+          def background():
+              im=Image.new('RGB',(W,H),BG); d=ImageDraw.Draw(im)
+              d.polygon([(360,0),(1200,0),(1200,H),(390,H)],fill=(10,16,28))
+              d.ellipse((720,-170,1260,370),fill=(12,20,38))
+              return im
+
+          def gradient_text(im,xy,text,f,c1,c2):
+              mask=Image.new('L',im.size,0); md=ImageDraw.Draw(mask); md.text(xy,text,font=f,fill=255)
+              grad=Image.new('RGB',im.size,c1); gp=ImageDraw.Draw(grad)
+              y0=xy[1]; hh=max(1,f.size+12)
+              for yy in range(y0,min(H,y0+hh+3)):
+                  t=(yy-y0)/hh; c=tuple(int(c1[k]*(1-t)+c2[k]*t) for k in range(3)); gp.line((0,yy,W,yy),fill=c)
+              im.paste(grad,(0,0),mask)
+
+          def render(i,n=16):
+              phase=i/n
+              im=background().convert('RGBA'); d=ImageDraw.Draw(im)
+
+              # night skyline / ambient room
+              d.rectangle((680,18,1190,120),fill=(7,13,23,220),outline=(27,39,56))
+              for x in range(710,1180,38):
+                  hh=35+((x//38)%4)*10; d.rectangle((x,118-hh,x+25,118),fill=(11,22,38))
+                  for yy in range(128-hh,112,14):
+                      for xx in (x+5,x+15):
+                          on=((i+x//10+yy)//3)%4==0
+                          d.rectangle((xx,yy,xx+4,yy+5),fill=VIO if on else (28,48,70))
+              d.rectangle((1090,20,1100,120),fill=(92,57,190,110))
+
+              # identity block
+              d.text((50,58),'kho.v4nfs@github:~$',font=F14,fill=(112,141,173))
+              if i%6<3: d.rectangle((227,61,238,78),fill=GREEN)
+              d.text((50,108),'PHAN NGUYEN',font=F42,fill=(248,250,252))
+              gradient_text(im,(50,158),'QUOC MINH',F42,CYAN,VIO); d=ImageDraw.Draw(im)
+              d.text((50,218),'Full-stack Engineer',font=F24,fill=(210,218,230))
+              rr(d,(50,258,220,296),8,(10,18,31),(45,67,92)); d.text((78,268),'◆  kho.v4nfs',font=F16,fill=(192,205,222))
+              d.line((50,318,405,318),fill=(52,68,90),width=1)
+              d.text((50,333),'Build  ·  Ship  ·  Observe  ·  Refine',font=F14,fill=(112,134,163))
+              for k,(ic,c,lab) in enumerate([('</>',CYAN,'DEVELOP'),('□',VIO,'TEST'),('☁',BLUE,'DEPLOY'),('▤',GREEN,'SCALE')]):
+                  x=50+k*92; rr(d,(x,370,x+66,426),10,(8,17,29),c,1); d.text((x+17,382),ic,font=F20,fill=c); d.text((x+3,435),lab,font=F12,fill=c)
+
+              # shelf + warm lamp
+              d.rectangle((448,45,466,320),fill=(18,27,39)); d.rectangle((466,60,582,70),fill=(33,45,60))
+              for x,w,h in [(480,12,75),(500,20,55),(528,12,68)]: d.rectangle((x,150-h,x+w,150),fill=(24,36,52))
+              d.rectangle((548,76,570,126),fill=(65,48,29),outline=(129,94,45)); d.rectangle((552,82,566,120),fill=(255,204,99))
+              halo=Image.new('RGBA',(W,H),(0,0,0,0)); hd=ImageDraw.Draw(halo); hd.ellipse((515,55,605,150),fill=(251,191,36,18+int(10*math.sin(phase*2*math.pi))))
+              im=Image.alpha_composite(im,halo.filter(ImageFilter.GaussianBlur(18))); d=ImageDraw.Draw(im)
+
+              # desk
+              d.polygon([(510,315),(1090,315),(1160,360),(585,360)],fill=(62,45,44),outline=(91,66,61))
+              d.polygon([(585,360),(1160,360),(1160,377),(585,377)],fill=(31,31,38)); d.polygon([(510,315),(585,360),(585,377),(510,333)],fill=(35,32,37))
+
+              # IDE monitor
+              rr(d,(600,95,820,280),12,(5,10,18),(58,77,103)); rr(d,(613,108,807,265),5,(9,17,29),(24,43,60))
+              d.text((626,118),'profile.tsx',font=F12,fill=(120,139,166)); d.rectangle((618,140,666,260),fill=(7,14,24))
+              for j,name in enumerate(['src','app','api','ui','tests','.env']): d.text((625,147+j*17),'› '+name,font=F12,fill=(94,114,141))
+              code=[('export default function Profile() {',PINK),('  return (',VIO),('    <main className="grid">',CYAN),('      <Hero />',GREEN),('      <Stack />',BLUE),('    </main>',CYAN),('  )',VIO),('}',PINK)]
+              active=(i//2)%len(code)
+              for j,(txt,c) in enumerate(code):
+                  yy=144+j*15
+                  if j==active: d.rectangle((673,yy-1,799,yy+13),fill=(24,40,60))
+                  d.text((678,yy),txt,font=F12,fill=c if j<5 else (177,190,208))
+              if i%4<2: d.rectangle((789,144+active*15,792,156+active*15),fill=CYAN)
+
+              # CI/CD monitor
+              rr(d,(832,82,1053,280),12,(5,10,18),(58,77,103)); rr(d,(845,95,1040,265),5,(9,17,29),(24,43,60))
+              d.text((858,108),'CI / CD PIPELINE',font=F14,fill=TEXT)
+              stages=['CODE','TEST','BUILD','IMAGE','DEPLOY']; active_stage=(i//3)%5
+              for k,s in enumerate(stages):
+                  cx=870+k*37; cy=145; col=GREEN if k<active_stage else (VIO if k==active_stage else (57,71,91))
+                  d.ellipse((cx-7,cy-7,cx+7,cy+7),fill=(8,17,29),outline=col,width=2)
+                  if k<active_stage: d.text((cx-4,cy-7),'✓',font=F12,fill=col)
+                  d.text((cx-15,164),s,font=F12,fill=(121,139,164))
+                  if k<4: d.line((cx+8,cy,cx+29,cy),fill=GREEN if k<active_stage else (35,61,70),width=2)
+              for r,(a,b,c) in enumerate([('Lint & typecheck','passed',GREEN),('Unit tests','passed',GREEN),('Build image','passed',GREEN),('Deploy production','running',VIO)]):
+                  yy=192+r*17; d.text((858,yy),a,font=F12,fill=(150,164,184)); d.text((972,yy),b,font=F12,fill=c)
+              d.rectangle((858,250,1027,255),fill=(25,37,54)); prog=(i%(n//2))/(n//2-1); d.rectangle((858,250,858+int(169*prog),255),fill=VIO)
+
+              # production dashboard
+              rr(d,(1060,115,1170,292),10,(8,15,26),(49,67,90)); d.text((1073,128),'PRODUCTION',font=F12,fill=TEXT)
+              pulse=3+int(2*(0.5+0.5*math.sin(phase*4*math.pi))); d.ellipse((1074-pulse,151-pulse,1074+pulse,151+pulse),fill=GREEN)
+              d.text((1087,143),'healthy',font=F12,fill=GREEN); d.text((1073,176),'uptime',font=F12,fill=MUTED); d.text((1073,192),'99.98%',font=F16,fill=TEXT)
+              d.text((1073,222),'API',font=F12,fill=MUTED); d.text((1073,238),f'{40+(i%5)}ms',font=F16,fill=CYAN)
+              pts=[(1075+k*12,274-int(8+5*math.sin((k+i)*.8))) for k in range(7)]; d.line(pts,fill=GREEN,width=2)
+
+              # monitor stands + desk devices
+              d.rectangle((696,280,722,317),fill=(26,34,47)); d.rectangle((914,280,940,317),fill=(26,34,47)); d.rectangle((673,310,748,318),fill=(37,48,63)); d.rectangle((890,310,964,318),fill=(37,48,63))
+              rr(d,(680,320,945,367),10,(9,14,24),(27,174,213),1); rr(d,(700,326,895,355),6,(10,16,27),(42,61,79))
+              for row in range(3):
+                  for col in range(14):
+                      x=708+col*12; y=331+row*7; c=CYAN if (col+row+i)%11==0 else (43,61,80); d.rectangle((x,y,x+8,y+4),fill=c)
+              d.polygon([(965,320),(1085,320),(1110,350),(990,350)],fill=(50,57,72),outline=(93,104,121)); d.text((1020,331),'◆',font=F14,fill=(25,32,43))
+              rr(d,(936,300,968,327),5,(16,20,28),(74,87,105)); d.arc((960,305,980,324),-70,70,fill=(90,101,120),width=2)
+              off=int(4*math.sin(phase*2*math.pi)); d.arc((942,278+off,956,306+off),90,260,fill=(110,125,146),width=1)
+
+              # developer + chair
+              rr(d,(575,286,668,435),24,(18,26,39),(49,64,84)); d.rectangle((607,421,625,454),fill=(34,45,60)); d.line((616,452,585,466),fill=(52,65,81),width=6); d.line((616,452,648,466),fill=(52,65,81),width=6)
+              d.polygon([(620,285),(666,292),(705,355),(640,381),(596,342)],fill=(13,21,34),outline=(43,59,80)); d.ellipse((615,238,668,291),fill=(194,143,111))
+              d.polygon([(614,255),(620,236),(650,228),(671,243),(666,258),(653,247),(640,249),(630,262)],fill=(8,13,22)); d.arc((611,232,672,292),195,345,fill=CYAN,width=5); d.ellipse((655,254,669,274),fill=(18,28,43),outline=CYAN,width=2)
+              dy=2 if i%2==0 else -1; d.line((648,319,717,336+dy),fill=(194,143,111),width=10); d.line((674,326,757,342-dy),fill=(194,143,111),width=10)
+              d.line((625,335,638,351),fill=VIO,width=4); d.line((638,351,651,330),fill=CYAN,width=4)
+
+              # cat silhouette
+              d.ellipse((1085,345,1160,373),fill=(13,17,24)); d.ellipse((1078,338,1103,362),fill=(13,17,24)); d.polygon([(1081,342),(1086,330),(1093,343)],fill=(13,17,24)); d.polygon([(1092,342),(1100,331),(1101,346)],fill=(13,17,24))
+
+              return im.convert('P',palette=Image.Palette.ADAPTIVE,colors=96)
+
+          frames=[render(i) for i in range(16)]
+          frames[0].save(OUT,save_all=True,append_images=frames[1:],duration=120,loop=0,optimize=True,disposal=2)
+          print('wrote',OUT,os.path.getsize(OUT),'bytes')
+          PY
+
+      - name: Promote GIF to profile and clean staging
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('README.md')
+          text=p.read_text()
+          text=text.replace('./assets/hero-dev.svg','./assets/hero-dev.gif')
+          p.write_text(text)
+          PY
+          rm -f assets/hero-dev.svg
+          rm -rf .profile-hero
+          rm -f .github/workflows/render-animated-profile-hero.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'feat(profile): ship animated developer workspace hero'
+          git push origin HEAD:master
