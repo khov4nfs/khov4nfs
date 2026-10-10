@@ -121,58 +121,26 @@ A feature is not finished at `works on my machine`. I care about repeatable buil
 
 <img src="./assets/section-04.svg" width="100%" alt="04 — Current gravity" />
 
-<table>
-<tr>
-<td width="33%" valign="top">
-
-**PRODUCT ENGINEERING**
-
-Interfaces with a point of view, clear flows, useful feedback, and fewer accidental decisions.
-
-</td>
-<td width="33%" valign="top">
-
-**SYSTEM ENGINEERING**
-
-Backend boundaries, APIs, auth, queues, data, failure modes, and systems that remain understandable as they grow.
-
-</td>
-<td width="33%" valign="top">
-
-**DEV TOOLING + AI**
-
-Automation, agents, context systems, RAG, and tooling that shorten the distance between intent and a reliable result.
-
-</td>
-</tr>
-</table>
+<img src="./assets/focus-pillars.svg" width="100%" alt="Product engineering, system engineering, and developer tooling focus pillars" />
 
 <br />
 
 <img src="./assets/section-05.svg" width="100%" alt="05 — Operating principles" />
 
-```text
-make the interface clear
-make the contracts explicit
-make failure visible
-make deployment repeatable
-make the system easier to understand than before
-```
-
-This profile is intentionally **not a project catalog**. The repositories carry the implementation details; this page describes how I like to build.
+<img src="./assets/principles-board.svg" width="100%" alt="Operating principles status board" />
 
 <br />
 
+<img src="./assets/contact-cta.svg" width="100%" alt="Contact Phan Nguyen Quoc Minh" />
+
 <div align="center">
 
-<sub>Phan Nguyen Quoc Minh · Full-stack Engineer · Vietnam / UTC+7</sub>
+<a href="mailto:minhpnq1807@gmail.com"><b>EMAIL ↗</b></a>
+&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/khov4nfs"><b>GITHUB ↗</b></a>
 
 <br /><br />
 
-**`build → verify → ship → observe → refine`**
-
-<br /><br />
-
-<a href="mailto:minhpnq1807@gmail.com">say hi →</a>
+<sub>build → verify → ship → observe → refine</sub>
 
 </div>
