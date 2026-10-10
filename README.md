@@ -2,14 +2,6 @@
 
 <img src="./assets/hero-dev.gif" width="100%" alt="Phan Nguyen Quoc Minh — Full-stack Engineer" />
 
-<br />
-
-<a href="https://github.com/khov4nfs"><b>github</b></a>
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<a href="mailto:minhpnq1807@gmail.com"><b>email</b></a>
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<code>kho.v4nfs</code>
-
 </div>
 
 <br />
@@ -138,9 +130,5 @@ A feature is not finished at `works on my machine`. I care about repeatable buil
 <a href="mailto:minhpnq1807@gmail.com"><b>EMAIL ↗</b></a>
 &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/khov4nfs"><b>GITHUB ↗</b></a>
-
-<br /><br />
-
-<sub>build → verify → ship → observe → refine</sub>
 
 </div>
