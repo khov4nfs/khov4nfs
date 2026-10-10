@@ -1,18 +1,186 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" fill="none">
-<defs><linearGradient id="a" x1="46" y1="0" x2="1154" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#22D3EE"/><stop offset=".52" stop-color="#818CF8"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs>
-<rect x="1" y="1" width="1198" height="518" rx="22" fill="#0D1117" stroke="#1F2937"/>
-<text x="48" y="48" fill="#F8FAFC" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700">TECHNOLOGY / WORKING SET</text>
-<text x="48" y="73" fill="#64748B" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">product interface → service layer → data → infrastructure → intelligence</text>
-<rect x="48" y="92" width="1104" height="2" rx="1" fill="#1E293B"/><rect x="48" y="92" width="220" height="2" rx="1" fill="url(#a)"><animate attributeName="width" values="110;580;1104;380;110" dur="8s" repeatCount="indefinite"/></rect>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" fill="none">
+<defs>
+  <linearGradient id="flow" x1="80" y1="0" x2="1120" y2="0" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#22D3EE"/>
+    <stop offset=".48" stop-color="#818CF8"/>
+    <stop offset="1" stop-color="#34D399"/>
+  </linearGradient>
+  <linearGradient id="rack" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#0B1422"/>
+    <stop offset="1" stop-color="#09101A"/>
+  </linearGradient>
+  <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="10"/>
+  </filter>
+  <path id="requestPath" d="M174 256 C238 256 244 256 303 256 S433 256 492 256 S622 256 681 256 S811 256 870 256 S1000 256 1058 256"/>
+  <path id="aiPath" d="M570 492 C640 492 650 492 720 492"/>
+</defs>
 
-<!-- frontend -->
-<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace"><rect x="48" y="122" width="342" height="160" rx="16" fill="#0A111C" stroke="#243244"/><circle cx="72" cy="148" r="5" fill="#22D3EE"><animate attributeName="opacity" values=".35;1;.35" dur="1.8s" repeatCount="indefinite"/></circle><text x="88" y="153" fill="#22D3EE" font-size="14" font-weight="700">FRONTEND</text><text x="72" y="187" fill="#E2E8F0" font-size="14">TypeScript · JavaScript</text><text x="72" y="215" fill="#E2E8F0" font-size="14">React · Next.js</text><text x="72" y="243" fill="#E2E8F0" font-size="14">Tailwind CSS · shadcn/ui</text><text x="72" y="266" fill="#64748B" font-size="10">typed interfaces / interaction / motion</text></g>
-<!-- backend -->
-<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace"><rect x="429" y="122" width="342" height="160" rx="16" fill="#0A111C" stroke="#243244"/><circle cx="453" cy="148" r="5" fill="#818CF8"><animate attributeName="opacity" values=".35;1;.35" dur="1.8s" begin=".3s" repeatCount="indefinite"/></circle><text x="469" y="153" fill="#A5B4FC" font-size="14" font-weight="700">BACKEND</text><text x="453" y="187" fill="#E2E8F0" font-size="14">Node.js · NestJS</text><text x="453" y="215" fill="#E2E8F0" font-size="14">.NET · ASP.NET Core</text><text x="453" y="243" fill="#E2E8F0" font-size="14">Java · REST APIs</text><text x="453" y="266" fill="#64748B" font-size="10">services / contracts / auth / queues</text></g>
-<!-- data -->
-<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace"><rect x="810" y="122" width="342" height="160" rx="16" fill="#0A111C" stroke="#243244"/><circle cx="834" cy="148" r="5" fill="#A78BFA"><animate attributeName="opacity" values=".35;1;.35" dur="1.8s" begin=".6s" repeatCount="indefinite"/></circle><text x="850" y="153" fill="#C4B5FD" font-size="14" font-weight="700">DATA</text><text x="834" y="187" fill="#E2E8F0" font-size="14">PostgreSQL · SQL Server</text><text x="834" y="215" fill="#E2E8F0" font-size="14">MongoDB · Redis</text><text x="834" y="243" fill="#E2E8F0" font-size="14">Supabase · Prisma</text><text x="834" y="266" fill="#64748B" font-size="10">relational / cache / storage / realtime</text></g>
-<!-- infra -->
-<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace"><rect x="48" y="312" width="532" height="156" rx="16" fill="#0A111C" stroke="#243244"/><circle cx="72" cy="338" r="5" fill="#34D399"><animate attributeName="opacity" values=".35;1;.35" dur="1.8s" begin=".9s" repeatCount="indefinite"/></circle><text x="88" y="343" fill="#86EFAC" font-size="14" font-weight="700">DELIVERY / INFRA</text><text x="72" y="379" fill="#E2E8F0" font-size="14">Docker · GitHub Actions · Linux</text><text x="72" y="407" fill="#E2E8F0" font-size="14">Nginx · Caddy · VPS / cloud services</text><text x="72" y="435" fill="#E2E8F0" font-size="14">PM2 · CI/CD · observability</text><text x="72" y="455" fill="#64748B" font-size="10">build once / deploy predictably / inspect failures</text></g>
-<!-- ai tooling -->
-<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace"><rect x="620" y="312" width="532" height="156" rx="16" fill="#0A111C" stroke="#243244"/><circle cx="644" cy="338" r="5" fill="#F59E0B"><animate attributeName="opacity" values=".35;1;.35" dur="1.8s" begin="1.2s" repeatCount="indefinite"/></circle><text x="660" y="343" fill="#FBBF24" font-size="14" font-weight="700">AI / TOOLING</text><text x="644" y="379" fill="#E2E8F0" font-size="14">Python · OpenAI / LLM workflows</text><text x="644" y="407" fill="#E2E8F0" font-size="14">RAG · semantic search · Qdrant</text><text x="644" y="435" fill="#E2E8F0" font-size="14">automation · developer agents · MCP</text><text x="644" y="455" fill="#64748B" font-size="10">use AI where it reduces real operational friction</text></g>
+<rect x="1" y="1" width="1198" height="638" rx="24" fill="#0D1117" stroke="#1F2937"/>
+
+<ellipse cx="300" cy="210" rx="220" ry="120" fill="#22D3EE" opacity=".025" filter="url(#soft)"/>
+<ellipse cx="915" cy="230" rx="240" ry="130" fill="#818CF8" opacity=".03" filter="url(#soft)"/>
+
+<text x="48" y="47" fill="#F8FAFC" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700">SYSTEM / TECHNOLOGY RACK</text>
+<text x="48" y="72" fill="#64748B" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">frontend → api / services → data → runtime / infra</text>
+
+<rect x="914" y="28" width="238" height="42" rx="12" fill="#09111B" stroke="#243244"/>
+<circle cx="938" cy="49" r="5" fill="#34D399" filter="url(#glow)">
+  <animate attributeName="opacity" values=".35;1;.35" dur="1.5s" repeatCount="indefinite"/>
+</circle>
+<text x="953" y="53" fill="#86EFAC" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">architecture.live / healthy</text>
+
+<rect x="48" y="92" width="1104" height="2" rx="1" fill="#1E293B"/>
+<rect x="48" y="92" width="220" height="2" rx="1" fill="url(#flow)">
+  <animate attributeName="width" values="120;470;860;1104;120" dur="8s" repeatCount="indefinite"/>
+</rect>
+
+<path d="M174 256 C238 256 244 256 303 256 S433 256 492 256 S622 256 681 256 S811 256 870 256 S1000 256 1058 256" stroke="#263244" stroke-width="4" stroke-linecap="round"/>
+<path d="M174 256 C238 256 244 256 303 256 S433 256 492 256 S622 256 681 256 S811 256 870 256 S1000 256 1058 256" stroke="url(#flow)" stroke-width="2" stroke-linecap="round" opacity=".72" stroke-dasharray="8 10">
+  <animate attributeName="stroke-dashoffset" values="0;-72" dur="3s" repeatCount="indefinite"/>
+</path>
+<circle r="6" fill="#F8FAFC" filter="url(#glow)">
+  <animateMotion dur="4.8s" repeatCount="indefinite" rotate="auto">
+    <mpath href="#requestPath"/>
+  </animateMotion>
+</circle>
+<text x="48" y="133" fill="#475569" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">REQUEST PATH / typed contract → service boundary → persistence → runtime</text>
+
+<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+  <rect x="48" y="154" width="252" height="292" rx="18" fill="url(#rack)" stroke="#21414B"/>
+  <rect x="62" y="168" width="224" height="34" rx="10" fill="#0C1922" stroke="#184B57"/>
+  <circle cx="79" cy="185" r="5" fill="#22D3EE">
+    <animate attributeName="opacity" values=".35;1;.35" dur="1.7s" repeatCount="indefinite"/>
+  </circle>
+  <text x="94" y="190" fill="#67E8F9" font-size="13" font-weight="700">01 / FRONTEND</text>
+
+  <text x="72" y="228" fill="#64748B" font-size="10">UI SHELL</text>
+  <rect x="72" y="240" width="204" height="40" rx="10" fill="#0A111C" stroke="#1E3A45"/>
+  <text x="86" y="265" fill="#E2E8F0" font-size="12">Next.js · React</text>
+
+  <text x="72" y="304" fill="#64748B" font-size="10">LANGUAGE / TYPES</text>
+  <rect x="72" y="316" width="204" height="40" rx="10" fill="#0A111C" stroke="#1E3A45"/>
+  <text x="86" y="341" fill="#E2E8F0" font-size="12">TypeScript · JavaScript</text>
+
+  <text x="72" y="380" fill="#64748B" font-size="10">UI SYSTEM</text>
+  <rect x="72" y="392" width="204" height="36" rx="10" fill="#0A111C" stroke="#1E3A45"/>
+  <text x="86" y="415" fill="#E2E8F0" font-size="12">Tailwind · shadcn/ui</text>
+
+  <rect x="74" y="434" width="198" height="3" rx="1.5" fill="#12242C"/>
+  <rect x="74" y="434" height="3" rx="1.5" fill="#22D3EE">
+    <animate attributeName="width" values="18;72;150;198;18" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+  <rect x="332" y="154" width="252" height="292" rx="18" fill="url(#rack)" stroke="#313B63"/>
+  <rect x="346" y="168" width="224" height="34" rx="10" fill="#11162A" stroke="#343B70"/>
+  <circle cx="363" cy="185" r="5" fill="#818CF8">
+    <animate attributeName="opacity" values=".35;1;.35" dur="1.7s" begin=".25s" repeatCount="indefinite"/>
+  </circle>
+  <text x="378" y="190" fill="#A5B4FC" font-size="13" font-weight="700">02 / API + SERVICES</text>
+
+  <text x="356" y="228" fill="#64748B" font-size="10">NODE SERVICES</text>
+  <rect x="356" y="240" width="204" height="40" rx="10" fill="#0A111C" stroke="#2B315A"/>
+  <text x="370" y="265" fill="#E2E8F0" font-size="12">Node.js · NestJS</text>
+
+  <text x="356" y="304" fill="#64748B" font-size="10">APPLICATION SERVICES</text>
+  <rect x="356" y="316" width="204" height="40" rx="10" fill="#0A111C" stroke="#2B315A"/>
+  <text x="370" y="341" fill="#E2E8F0" font-size="12">.NET · ASP.NET Core</text>
+
+  <text x="356" y="380" fill="#64748B" font-size="10">CONTRACTS</text>
+  <rect x="356" y="392" width="204" height="36" rx="10" fill="#0A111C" stroke="#2B315A"/>
+  <text x="370" y="415" fill="#E2E8F0" font-size="12">Java · REST · Auth</text>
+
+  <g>
+    <circle cx="544" cy="219" r="4" fill="#34D399"/>
+    <text x="513" y="222" fill="#86EFAC" font-size="9">ready</text>
+  </g>
+</g>
+
+<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+  <rect x="616" y="154" width="252" height="292" rx="18" fill="url(#rack)" stroke="#3B315D"/>
+  <rect x="630" y="168" width="224" height="34" rx="10" fill="#161126" stroke="#4A3473"/>
+  <circle cx="647" cy="185" r="5" fill="#A78BFA">
+    <animate attributeName="opacity" values=".35;1;.35" dur="1.7s" begin=".5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="662" y="190" fill="#C4B5FD" font-size="13" font-weight="700">03 / DATA</text>
+
+  <text x="640" y="228" fill="#64748B" font-size="10">RELATIONAL</text>
+  <rect x="640" y="240" width="204" height="40" rx="10" fill="#0A111C" stroke="#43335E"/>
+  <text x="654" y="265" fill="#E2E8F0" font-size="12">PostgreSQL · SQL Server</text>
+
+  <text x="640" y="304" fill="#64748B" font-size="10">DOCUMENT / CACHE</text>
+  <rect x="640" y="316" width="204" height="40" rx="10" fill="#0A111C" stroke="#43335E"/>
+  <text x="654" y="341" fill="#E2E8F0" font-size="12">MongoDB · Redis</text>
+
+  <text x="640" y="380" fill="#64748B" font-size="10">PLATFORM / ORM</text>
+  <rect x="640" y="392" width="204" height="36" rx="10" fill="#0A111C" stroke="#43335E"/>
+  <text x="654" y="415" fill="#E2E8F0" font-size="12">Supabase · Prisma</text>
+
+  <rect x="644" y="434" width="188" height="3" rx="1.5" fill="#21182F"/>
+  <rect x="644" y="434" width="54" height="3" rx="1.5" fill="#A78BFA">
+    <animate attributeName="x" values="644;778;644" dur="3.8s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+  <rect x="900" y="154" width="252" height="292" rx="18" fill="url(#rack)" stroke="#214A3A"/>
+  <rect x="914" y="168" width="224" height="34" rx="10" fill="#0D1A17" stroke="#20543F"/>
+  <circle cx="931" cy="185" r="5" fill="#34D399">
+    <animate attributeName="opacity" values=".35;1;.35" dur="1.7s" begin=".75s" repeatCount="indefinite"/>
+  </circle>
+  <text x="946" y="190" fill="#86EFAC" font-size="13" font-weight="700">04 / RUNTIME + INFRA</text>
+
+  <text x="924" y="228" fill="#64748B" font-size="10">BUILD / SHIP</text>
+  <rect x="924" y="240" width="204" height="40" rx="10" fill="#0A111C" stroke="#24503E"/>
+  <text x="938" y="265" fill="#E2E8F0" font-size="12">Docker · GitHub Actions</text>
+
+  <text x="924" y="304" fill="#64748B" font-size="10">EDGE / HOST</text>
+  <rect x="924" y="316" width="204" height="40" rx="10" fill="#0A111C" stroke="#24503E"/>
+  <text x="938" y="341" fill="#E2E8F0" font-size="12">Linux · Nginx · Caddy</text>
+
+  <text x="924" y="380" fill="#64748B" font-size="10">PROCESS / VPS</text>
+  <rect x="924" y="392" width="204" height="36" rx="10" fill="#0A111C" stroke="#24503E"/>
+  <text x="938" y="415" fill="#E2E8F0" font-size="12">PM2 · VPS · Observability</text>
+
+  <circle cx="1107" cy="219" r="4" fill="#34D399" filter="url(#glow)">
+    <animate attributeName="r" values="3;6;3" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1031" y="222" fill="#86EFAC" font-size="9">prod healthy</text>
+</g>
+
+<g fill="#0D1117" stroke-width="2">
+  <circle cx="300" cy="256" r="7" stroke="#22D3EE"/>
+  <circle cx="584" cy="256" r="7" stroke="#818CF8"/>
+  <circle cx="868" cy="256" r="7" stroke="#A78BFA"/>
+  <circle cx="1152" cy="256" r="7" stroke="#34D399"/>
+</g>
+
+<rect x="48" y="480" width="1104" height="112" rx="18" fill="#091019" stroke="#243244"/>
+<text x="72" y="509" fill="#FBBF24" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700">AI / TOOLING SIDECAR</text>
+<text x="72" y="536" fill="#E2E8F0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">Python · OpenAI / LLM workflows · RAG · Qdrant · MCP · automation / agents</text>
+<text x="72" y="561" fill="#64748B" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">cross-cutting capability: context retrieval → reasoning → tool use → operational feedback</text>
+
+<path d="M570 492 C640 492 650 492 720 492" stroke="#3A2E1E" stroke-width="2" stroke-dasharray="6 7"/>
+<circle r="4" fill="#F59E0B" filter="url(#glow)">
+  <animateMotion dur="2.4s" repeatCount="indefinite">
+    <mpath href="#aiPath"/>
+  </animateMotion>
+</circle>
+
+<g transform="translate(866 510)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+  <text x="0" y="0" fill="#475569" font-size="9">runtime</text>
+  <rect x="0" y="12" width="246" height="34" rx="8" fill="#07100D" stroke="#17392E"/>
+  <text x="12" y="33" fill="#86EFAC" font-size="10">build ✓  test ✓  deploy ✓  observe ●</text>
+  <circle cx="222" cy="29" r="4" fill="#34D399">
+    <animate attributeName="opacity" values=".3;1;.3" dur="1.3s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<text x="48" y="618" fill="#334155" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">kho.v4nfs / full-stack system view / animated request + runtime signals</text>
 </svg>
