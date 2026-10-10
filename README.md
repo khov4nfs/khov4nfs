@@ -20,7 +20,7 @@ I’m **Minh**, a full-stack engineer interested in the complete delivery path �
 
 <div align="center">
 
-<img src="./assets/dev-coding.gif" width="520" alt="Custom animated developer workstation — coding, testing and shipping" />
+<img src="./assets/dev-coding.gif" width="660" alt="Custom animated developer workstation — coding, testing and shipping" />
 
 <sub>editor → tests → image → deploy → health</sub>
 
