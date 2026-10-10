@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="92" viewBox="0 0 1200 92" fill="none">
+<defs><linearGradient id="g" x1="24" y1="0" x2="1176" y2="0"><stop stop-color="#34D399"/><stop offset=".5" stop-color="#22D3EE"/><stop offset="1" stop-color="#818CF8"/></linearGradient><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect x="1" y="1" width="1198" height="90" rx="18" fill="#0D1117" stroke="#202938"/>
+<rect x="24" y="20" width="72" height="52" rx="12" fill="#0A111C" stroke="#34D399"/><text x="60" y="54" text-anchor="middle" fill="#86EFAC" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="22" font-weight="800">05</text>
+<text x="136" y="39" fill="#F8FAFC" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="21" font-weight="800" letter-spacing="1">OPERATING PRINCIPLES</text><text x="136" y="62" fill="#64748B" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">clarity / explicit contracts / visible failure / repeatable delivery</text>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9"><text x="856" y="30" fill="#94A3B8">CLARITY</text><text x="928" y="30" fill="#94A3B8">CONTRACTS</text><text x="1010" y="30" fill="#94A3B8">FAILURE</text><text x="1080" y="30" fill="#94A3B8">REPEAT</text></g>
+<g fill="#334155"><rect x="856" y="44" width="50" height="6" rx="3"/><rect x="928" y="44" width="58" height="6" rx="3"/><rect x="1010" y="44" width="48" height="6" rx="3"/><rect x="1080" y="44" width="55" height="6" rx="3"/></g>
+<rect x="856" y="44" width="12" height="6" rx="3" fill="#34D399" filter="url(#glow)"><animate attributeName="x" values="856;1123;856" dur="5.6s" repeatCount="indefinite"/></rect>
+<path d="M136 78 H1138" stroke="#1E293B"/><rect x="136" y="77" width="90" height="2" fill="url(#g)"><animate attributeName="width" values="70;1002;180;1002;70" dur="8.5s" repeatCount="indefinite"/></rect>
+</svg>
