@@ -11,7 +11,6 @@ permissions:
 
 jobs:
   refine:
-    if: github.event.head_commit.message == 'chore(profile): one-shot refine engineer gif'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -38,13 +37,11 @@ jobs:
 
           for frame in ImageSequence.Iterator(im):
               f = frame.convert('RGB')
-              # Pixel-art crispness: controlled nearest-neighbor upscale when needed.
               target_w = max(900, f.width)
               target_h = round(f.height * target_w / f.width)
               if target_w != f.width:
                   f = f.resize((target_w, target_h), Image.Resampling.NEAREST)
 
-              # Darker GitHub-native grade with stronger separation and edge clarity.
               f = ImageEnhance.Brightness(f).enhance(0.82)
               f = ImageEnhance.Contrast(f).enhance(1.28)
               f = ImageEnhance.Color(f).enhance(1.08)
