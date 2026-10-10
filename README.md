@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hero-dev.svg" width="100%" alt="Phan Nguyen Quoc Minh — Full-stack Engineer" />
+<img src="./assets/hero-dev.gif" width="100%" alt="Phan Nguyen Quoc Minh — Full-stack Engineer" />
 
 <br />
 
