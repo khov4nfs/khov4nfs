@@ -1,0 +1,75 @@
+name: Refine engineer GIF (one-shot)
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/refine-engineer-gif.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  refine:
+    if: github.event.head_commit.message == 'chore(profile): one-shot refine engineer gif'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Pillow
+        run: python -m pip install --quiet pillow
+
+      - name: Sharpen, pixel-grade and darken animation
+        run: |
+          python - <<'PY'
+          from PIL import Image, ImageSequence, ImageEnhance, ImageFilter
+          from pathlib import Path
+
+          p = Path('assets/dev-coding.gif')
+          im = Image.open(p)
+          frames = []
+          durations = []
+
+          for frame in ImageSequence.Iterator(im):
+              f = frame.convert('RGB')
+              # Pixel-art crispness: controlled nearest-neighbor upscale when needed.
+              target_w = max(900, f.width)
+              target_h = round(f.height * target_w / f.width)
+              if target_w != f.width:
+                  f = f.resize((target_w, target_h), Image.Resampling.NEAREST)
+
+              # Darker GitHub-native grade with stronger separation and edge clarity.
+              f = ImageEnhance.Brightness(f).enhance(0.82)
+              f = ImageEnhance.Contrast(f).enhance(1.28)
+              f = ImageEnhance.Color(f).enhance(1.08)
+              f = f.filter(ImageFilter.UnsharpMask(radius=0.9, percent=185, threshold=2))
+              f = f.quantize(colors=56, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
+              frames.append(f)
+              durations.append(frame.info.get('duration', im.info.get('duration', 120)))
+
+          frames[0].save(
+              p,
+              save_all=True,
+              append_images=frames[1:],
+              duration=durations,
+              loop=0,
+              optimize=True,
+              disposal=2,
+          )
+          print(f'refined {len(frames)} frames -> {p.stat().st_size} bytes')
+          PY
+
+      - name: Remove one-shot workflow and commit result
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm .github/workflows/refine-engineer-gif.yml
+          git add assets/dev-coding.gif
+          git commit -m 'fix(profile): crisp dark engineer animation'
+          git push origin master
