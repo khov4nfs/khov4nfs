@@ -1,0 +1,39 @@
+<svg width="1200" height="390" viewBox="0 0 1200 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="390"><stop stop-color="#0D1117"/><stop offset="1" stop-color="#0B1220"/></linearGradient>
+  <linearGradient id="beam" x1="90" y1="0" x2="1110" y2="0"><stop stop-color="#22D3EE"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#34D399"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="1" y="1" width="1198" height="388" rx="26" fill="url(#bg)" stroke="#263241"/>
+<rect x="28" y="28" width="1144" height="334" rx="20" fill="#0E151E" stroke="#1E2B39"/>
+
+<!-- left identity -->
+<text x="64" y="82" fill="#7B8EA3" font-size="13" font-family="monospace">CONTACT / OPEN CHANNEL</text>
+<text x="64" y="127" fill="#E6EDF3" font-size="28" font-family="monospace" font-weight="700">PHAN NGUYEN QUOC MINH</text>
+<text x="64" y="158" fill="#22D3EE" font-size="15" font-family="monospace">Full-stack Engineer · kho.v4nfs</text>
+<text x="64" y="201" fill="#9AAEBD" font-size="14" font-family="monospace">Interested in product engineering, backend systems,</text>
+<text x="64" y="224" fill="#9AAEBD" font-size="14" font-family="monospace">developer tooling, AI workflows and shipping reliable software.</text>
+<rect x="64" y="259" width="210" height="38" rx="19" fill="#0D211B" stroke="#1D6A53"/>
+<circle cx="86" cy="278" r="6" fill="#34D399" filter="url(#glow)"><animate attributeName="opacity" values=".35;1;.35" dur="1.5s" repeatCount="indefinite"/></circle>
+<text x="104" y="283" fill="#7CE8BC" font-size="12" font-family="monospace">open to connect</text>
+<text x="64" y="331" fill="#66788A" font-size="11" font-family="monospace">Vietnam / UTC+7 · async-friendly</text>
+
+<!-- contact terminal -->
+<rect x="650" y="62" width="470" height="246" rx="16" fill="#0A1017" stroke="#263443"/>
+<circle cx="676" cy="86" r="5" fill="#F87171"/><circle cx="694" cy="86" r="5" fill="#FBBF24"/><circle cx="712" cy="86" r="5" fill="#34D399"/>
+<text x="744" y="91" fill="#64748B" font-size="11" font-family="monospace">contact.session</text>
+<text x="678" y="132" fill="#22D3EE" font-size="13" font-family="monospace">$ email</text>
+<text x="782" y="132" fill="#E6EDF3" font-size="14" font-family="monospace">minhpnq1807@gmail.com</text>
+<text x="678" y="173" fill="#A78BFA" font-size="13" font-family="monospace">$ github</text>
+<text x="782" y="173" fill="#E6EDF3" font-size="14" font-family="monospace">github.com/khov4nfs</text>
+<text x="678" y="214" fill="#34D399" font-size="13" font-family="monospace">$ handle</text>
+<text x="782" y="214" fill="#E6EDF3" font-size="14" font-family="monospace">@kho.v4nfs</text>
+<text x="678" y="255" fill="#F59E0B" font-size="13" font-family="monospace">$ timezone</text>
+<text x="782" y="255" fill="#E6EDF3" font-size="14" font-family="monospace">UTC+7 / Vietnam</text>
+<text x="678" y="289" fill="#74879B" font-size="12" font-family="monospace">$ ping --context meaningful</text>
+<rect x="904" y="278" width="9" height="16" fill="#34D399"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+
+<!-- signal footer -->
+<rect x="64" y="348" width="1056" height="3" rx="1.5" fill="#17202B"/>
+<rect x="64" y="348" width="230" height="3" rx="1.5" fill="url(#beam)" filter="url(#glow)"><animate attributeName="x" values="64;890;64" dur="5.5s" repeatCount="indefinite"/></rect>
+</svg>
