@@ -14,7 +14,7 @@
 
 <br />
 
-### `01 / engineer at work`
+<img src="./assets/section-01.svg" width="100%" alt="01 — Engineer at work" />
 
 I’m **Minh**, a full-stack engineer interested in the complete delivery path — from a deliberate interface to backend boundaries, data, deployment, and runtime behavior.
 
@@ -34,7 +34,7 @@ I prefer software that is **typed, testable, observable, understandable, and act
 
 <br />
 
-### `02 / delivery is part of the build`
+<img src="./assets/section-02.svg" width="100%" alt="02 — Delivery pipeline" />
 
 <img src="./assets/deploy-flow.svg" width="100%" alt="Animated CI/CD deployment pipeline" />
 
@@ -46,7 +46,7 @@ A feature is not finished at `works on my machine`. I care about repeatable buil
 
 <br />
 
-### `03 / technology working set`
+<img src="./assets/section-03.svg" width="100%" alt="03 — Technology map" />
 
 <img src="./assets/stack-grid.svg" width="100%" alt="Full-stack technology working set" />
 
@@ -106,7 +106,7 @@ A feature is not finished at `works on my machine`. I care about repeatable buil
 
 <br />
 
-### `04 / what I gravitate toward`
+<img src="./assets/section-04.svg" width="100%" alt="04 — Current gravity" />
 
 <table>
 <tr>
@@ -136,7 +136,7 @@ Automation, agents, context systems, RAG, and tooling that shorten the distance 
 
 <br />
 
-### `05 / operating principles`
+<img src="./assets/section-05.svg" width="100%" alt="05 — Operating principles" />
 
 ```text
 make the interface clear
